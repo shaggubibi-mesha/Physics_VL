@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Physics Virtual Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2>⚛ Physics <span>Virtual Lab</span></h2>
+    <p>Explore Science Through Experiments</p>
+  </header>
+
+  <main>
+    <section class="cards">
+      <button onclick="choose('pendulum')">🔵 Pendulum</button>
+      <button onclick="choose('projectile')">🚀 Projectile</button>
+      <button onclick="choose('freefall')">🍎 Free Fall</button>
+      <button onclick="choose('spring')">🌀 Spring</button>
+    </section>
+
+    <section class="lab">
+      <h2 id="title">Simple Pendulum</h2>
+      <canvas id="canvas" width="600" height="300"></canvas>
+
+      <div class="controls">
+        <label id="sliderLabel">Pendulum Length</label>
+        <input id="slider" type="range" min="30" max="150" value="100">
+        <p id="value">100</p>
+        <button onclick="start()">▶ Start</button>
+        <button onclick="pause()">Ⅱ Pause</button>
+        <button onclick="reset()">↻ Reset</button>
+      </div>
+
+    
+<div class="result">
+  <h3>📊 Experiment Results</h3>
+  <p id="result">Time period: 2.01 s</p>
+  <p id="formula">Formula: T = 2π√(L/g)</p>
+  <p id="frequency">Frequency: 0.50 Hz</p>
+  <p id="cycles">Complete oscillations: 0</p>
+  <p id="measured">Measured time period: --</p>
+</div>
+    </section>
+  </main>
+
+  <footer>Made for Students | Physics Virtual Lab © 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: Arial, sans-serif;
+  color: #f3f5ff; background: #080d1b;
+}
+header {
+  text-align: center; padding: 25px 10px;
+  background: linear-gradient(120deg,#171b43,#123b50);
+  border-bottom: 1px solid #354263;
+}
+header h2 { margin: 0; }
+header span { color: #53e8f5; }
+header p { color: #aab7d1; }
+main { width: 92%; max-width: 900px; margin: 30px auto; }
+.cards {
+  display: grid; grid-template-columns: repeat(4,1fr);
+  gap: 12px; margin-bottom: 20px;
+}
+button {
+  cursor: pointer; border: 1px solid #344563;
+  border-radius: 9px; padding: 13px 10px;
+  background: #19243c; color: white; font-size: 14px;
+}
+button:hover {
+  border-color: #53e8f5; background: #243652;
+}
+.lab {
+  background: #111a2d; border: 1px solid #2b3854;
+  padding: 20px; border-radius: 14px;
+}
+.lab h2 { color: #53e8f5; text-align: center; }
+canvas {
+  display: block; width: 100%; height: auto;
+  background: #0a1324; border-radius: 10px;
+  border: 1px solid #293854;
+}
+.controls { padding: 20px 0; }
+.controls label { color: #aebdd8; }
+input[type=range] {
+  width: 100%; margin-top: 15px; accent-color: #53e8f5;
+}
+.controls p { color: #53e8f5; }
+.controls button:first-of-type {
+  background: #53e8f5; color: #081321;
+}
+.result {
+  padding: 15px; border-radius: 10px;
+  background: #192842; border-left: 3px solid #53e8f5;
+}
+.result h3 { margin-top: 0; }
+.result p { color: #c5d5ee; }
+footer {
+  text-align: center; color: #8999b6;
+  padding: 25px; font-size: 12px;
+}
+@media(max-width:550px) {
+  .cards { grid-template-columns: repeat(2,1fr); }
+  .lab { padding: 12px; }
+}
